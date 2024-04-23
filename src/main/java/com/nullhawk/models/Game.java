@@ -2,6 +2,7 @@ package com.nullhawk.models;
 
 import com.nullhawk.enums.*;
 import java.util.List;
+import java.util.ArrayList;
 
 public class Game {
     Board board;
@@ -10,7 +11,13 @@ public class Game {
     Player Winner;
     List<Move> moves;
     GameState gameState;
-    Game(Player player1, Player player2){
-        this.board = new Board();
+
+    public Game(Board board, List<Player> players) {
+        this.board = board;
+        this.players = players;
+        this.nextPlayerMoveIndex = 0;
+        this.Winner = null;
+        this.moves = new ArrayList<>();
+        this.gameState = GameState.IN_PROGRESS;
     }
 }
