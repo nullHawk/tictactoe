@@ -10,7 +10,7 @@ public class Game {
     Player Winner;
     List<Move> moves;
     GameState gameState;
-    Game(){
-        
+    Game(Player player1, Player player2){
+        this.board = new Board();
     }
 }
