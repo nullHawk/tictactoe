@@ -9,7 +9,6 @@ public class Move {
         this.player = player;
     }
 
-    // Getters: 
     public Cell getCell() {
         return this.cell;
     }
@@ -17,8 +16,6 @@ public class Move {
     public Player getPlayer() {
         return this.player;
     }
-
-    // Setters:
 
     public void setCell(Cell cell) {
         this.cell = cell;
